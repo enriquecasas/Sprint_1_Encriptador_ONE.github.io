@@ -1,0 +1,113 @@
+header {
+    padding: 20px 0;
+}
+
+.box-title {
+    width: 940px;
+    display: inline-flex;
+    margin: 0 200px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0A3871;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 800px;
+    margin: 0 auto;
+    zoom: 75%;
+    border-radius: 50px;
+    background: rgba(232, 235, 247, 0.9);
+    /* background: rgba(230, 64, 14, 0.9); */
+    /* background-size: 80%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+}
+
+.frame-1{
+    width: 70%;
+    height: 100%;
+    /* background-color: black; */
+}
+
+.frame-1 textarea{
+    width: 80%;
+    height: 288px;
+    border-color: #0A3871;
+    border-radius: 5px;
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    background-color: none;
+    margin: 100px 0 0 120px;
+    padding: 20px;
+}
+
+.text-warming {
+    width: 80%;
+    margin: 10px 0 0 120px;
+    
+    /* display: block;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    height: 18px;
+    left: 240px;
+    top: 851px; */
+}
+
+.Frame-1 h5::before {
+    content: url("../img/bi_exclamation-circle-fill.svg");
+    position: relative;
+    margin-right: 10px;
+   
+   }
+
+.frame-2{
+    width: 30%;
+    height: 100%;
+    /* display: inline-block; */
+    /* background-color: aqua; */
+}
+
+.resultado{
+    width: 75%;
+    height:85%;
+    border-color: #0A3871;
+    border-radius: 50px;
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%; 
+    /* border-color: #000000;
+    border-width: 2px;
+    border-style: solid; */
+    background: rgba(214, 220, 245, 0.9);
+    margin: 30px 0;
+    padding: 25px;
+    box-shadow: 0px 20px 32px -10px rgba(0, 0, 0, 0.08);
+}
+
+.frame-3{
+    width: 80%;
+    margin: 10px 0 0 120px;
+    }
+
+
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright {
+    /* color: #ffffff; */
+    font-size: 15px;
+    margin: 20px;
+}

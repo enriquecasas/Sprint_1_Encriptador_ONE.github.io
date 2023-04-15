@@ -119,7 +119,7 @@ header {
     padding: 15px 0;
     font-size: 18px;
     font-weight: bold;
-    color: gray;
+    color: black;
     /* color: #495057; */
     background: #D8DFE8;
     border: none;
@@ -127,6 +127,16 @@ header {
     transition: 1s all;
     cursor: pointer;
     border: 1px solid #0A3871;
+}
+
+.encriptar:hover{
+    background:#436185;
+    transform: scale(1.2);
+}
+
+.desencriptar:hover{
+    background: rgb(180, 178, 178);
+    transform: scale(1.2);
 }
 
 footer {

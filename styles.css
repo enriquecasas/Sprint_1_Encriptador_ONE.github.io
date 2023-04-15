@@ -27,13 +27,13 @@ header {
     background-blend-mode: hard-light;
 }
 
-.frame-1{
+.frame-1 {
     width: 70%;
     height: 100%;
     /* background-color: black; */
 }
 
-.frame-1 textarea{
+.frame-1 textarea {
     width: 80%;
     height: 288px;
     border-color: #0A3871;
@@ -52,7 +52,7 @@ header {
 .text-warming {
     width: 80%;
     margin: 10px 0 0 120px;
-    
+
     /* display: block;
     align-items: center;
     padding: 0px;
@@ -66,26 +66,26 @@ header {
     content: url("../img/bi_exclamation-circle-fill.svg");
     position: relative;
     margin-right: 10px;
-   
-   }
 
-.frame-2{
+}
+
+.frame-2 {
     width: 30%;
     height: 100%;
     /* display: inline-block; */
     /* background-color: aqua; */
 }
 
-.resultado{
+.resultado {
     width: 75%;
-    height:85%;
+    height: 85%;
     border-color: #0A3871;
     border-radius: 50px;
     font-family: 'Courier New';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 150%; 
+    line-height: 150%;
     /* border-color: #000000;
     border-width: 2px;
     border-style: solid; */
@@ -95,11 +95,39 @@ header {
     box-shadow: 0px 20px 32px -10px rgba(0, 0, 0, 0.08);
 }
 
-.frame-3{
+.frame-3 {
     width: 80%;
     margin: 10px 0 0 120px;
-    }
+}
 
+.encriptar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    /* color: #495057; */
+    background: #0a4081;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.desencriptar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    /* color: #495057; */
+    background: #D8DFE8;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+}
 
 footer {
     text-align: center;

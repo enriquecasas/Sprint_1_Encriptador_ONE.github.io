@@ -64,18 +64,16 @@ header {
 }
 
 .resultado {
+    position: relative;
+    display: flex;
     width: 75%;
     height: 85%;
-    border-color: #0A3871;
     border-radius: 50px;
     font-family: 'Courier New';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    border-color: #000000;
-    border-width: 2px;
-    border-style: solid;
     background: rgba(214, 220, 245, 0.9);
     margin: 30px 0;
     padding: 25px;
@@ -133,9 +131,10 @@ header {
     background: rgba(214, 220, 245, 0.9);
 }
 
-.mensaje {
-    position: absolute;
-    margin: 250px 0 0 40px;
+.mensaje-uno {
+    margin: 450px 0 0 5px;
+    width: 336px;
+    height: 48px;
     font-family: 'Courier New';
     font-style: normal;
     font-weight: 700;
@@ -145,6 +144,23 @@ header {
     color: #343A40;
     flex: none;
     order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.mensaje-dos {
+    margin: 50px 0 0 5px;
+    width: 336px;
+    height: 48px;
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
     align-self: stretch;
     flex-grow: 0;
 }

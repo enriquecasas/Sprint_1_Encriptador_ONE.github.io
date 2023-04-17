@@ -61,6 +61,6 @@ function limpiar() {
 }
 
 function copy() {
-    let textoexriptado = document.getElementById('textencript').value.toString();
+    let textoexriptado = document.getElementById('textencript');
     navigator.clipboard.writeText(textoexriptado.innerHTML);
 }

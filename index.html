@@ -29,21 +29,27 @@
                     <h5 class="text-warming"><strong>Solo letras minúsculas y sin acentos</strong></h5>
                     <div class="btns">
                         <input class="btn-encriptar" onclick="encrypt();" type="submit" value="Encriptar">
-                        <input class="btn-desencriptar" onclick="decryptor()" type="submit" value="Desencriptar">
+                        <input class="btn-desencriptar" onclick="decryptor();" type="submit" value="Desencriptar">
                     </div>
                 </div>
             </div>
         </section>
         <section class="resultado-mensaje">
             <div class="resultado">
-                <div class="resultado-no-encontrado">
-                    <img src="imgen/muneco.svg" alt="Imagen no encontrado">
-                    <h2 class="mensaje-uno">Ningún mensaje fue encontrado</h2>
-                    <p class="mensaje-dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <div class="resultado-no-encontrado" >
+                    <img src="imgen/muneco.svg" alt="Imagen no encontrado" id="display-imagen">
+                    <h2 class="mensaje-uno" id="mensaje-uno">Ningún mensaje fue encontrado</h2>
+                    <p class="mensaje-dos" id="mensaje-dos">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
-                <div class="resultado-encontrado">
+                <div class="resultado-encontrado" id="resultado-encontrado" style="display: none;">
+                    <div class="texto-mensaje">
+                        <p class="textencript" id="textencript"></p>
+                    </div>
                     <h3 class="mensaje-tres">Mesaje encontrado</h3>
-                    <input class="btn-copiar" type="button" value="Copiar">
+                    <div class="btns-mensaje">
+                        <input class="btn-copiar" type="button" onclick="copy();" value="Copiar">
+                        <input class="btn-limpiar" type="button" onclick="limpiar();" value="Limpiar">
+                    </div>
                 </div>
             </div>
         </section>

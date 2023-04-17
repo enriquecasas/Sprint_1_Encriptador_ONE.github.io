@@ -20,32 +20,33 @@
             <h1>Encriptador de texto</h1>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <section class="frame-1">
-                <div name="texto">
-                    <textarea id="texto-area" cols="30" rows="10"></textarea>
-                    <div class="text-warming">
-                        <h5><strong>Solo letras minúsculas y sin acentos</strong></h5>
-                    </div>
-                    <div class="frame-3">
+    <main class="container">
+        <section class="entrada-mensaje">
+            <div class="mensaje-contenedor">
+                <textarea id="texto-area" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
+
+                <div class="btn">
+                    <h5 class="text-warming"><strong>Solo letras minúsculas y sin acentos</strong></h5>
+                    <div class="btns">
                         <input class="btn-encriptar" onclick="encrypt();" type="submit" value="Encriptar">
                         <input class="btn-desencriptar" onclick="decryptor()" type="submit" value="Desencriptar">
                     </div>
                 </div>
-            </section>
-            <section class="frame-2">
-                <div class="resultado">
-                    <div class="imagen-busqueda">
-                        <img src="imgen/Muñeco.png" alt="Imagen de busqueda">
-                    </div>
-                    <div class="">
-                        <p class="mensaje-uno">Ningún mensaje fue <br> encontrado</p>
-                        <p class="mensaje-dos">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    </div>
+            </div>
+        </section>
+        <section class="resultado-mensaje">
+            <div class="resultado">
+                <div class="resultado-no-encontrado">
+                    <img src="imgen/muneco.svg" alt="Imagen no encontrado">
+                    <h2 class="mensaje-uno">Ningún mensaje fue encontrado</h2>
+                    <p class="mensaje-dos">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
-            </section>
-        </div>
+                <div class="resultado-encontrado">
+                    <h3 class="mensaje-tres">Mesaje encontrado</h3>
+                    <input class="btn-copiar" type="button" value="Copiar">
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>

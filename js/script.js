@@ -41,7 +41,12 @@ function decryptor() {
         if (wordencrypt.includes("ai")) { wordencrypt = wordencrypt.replace(/ai/gi, "a"); }
         if (wordencrypt.includes("ober")) { wordencrypt = wordencrypt.replace(/ober/gi, "o"); }
         if (wordencrypt.includes("ufat")) { wordencrypt = wordencrypt.replace(/ufat/gi, "u"); }
-
+        
+        document.getElementById("display-imagen").style.display = "none";
+        document.getElementById("mensaje-dos").style.display = "none";
+        document.getElementById("mensaje-uno").style.display = "none";
+        document.getElementById("resultado-encontrado").style.display = "";
+        
         document.getElementById("textencript").innerHTML = "";
         document.getElementById("textencript").innerHTML = wordencrypt;
         encriptado = false;

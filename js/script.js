@@ -36,19 +36,20 @@ function decryptor() {
     var texto = document.getElementById('texto-area').value.toString();
 
     if (texto.length > 0 ) {
+        
+        document.getElementById("display-imagen").style.display = "none";
+        document.getElementById("mensaje-dos").style.display = "none";
+        document.getElementById("mensaje-uno").style.display = "none";
+        
         if (wordencrypt.includes("enter")) { wordencrypt = wordencrypt.replace(/enter/gi, "e"); }
         if (wordencrypt.includes("imes")) { wordencrypt = wordencrypt.replace(/imes/gi, "i"); }
         if (wordencrypt.includes("ai")) { wordencrypt = wordencrypt.replace(/ai/gi, "a"); }
         if (wordencrypt.includes("ober")) { wordencrypt = wordencrypt.replace(/ober/gi, "o"); }
         if (wordencrypt.includes("ufat")) { wordencrypt = wordencrypt.replace(/ufat/gi, "u"); }
         
-        document.getElementById("display-imagen").style.display = "none";
-        document.getElementById("mensaje-dos").style.display = "none";
-        document.getElementById("mensaje-uno").style.display = "none";
-        document.getElementById("resultado-encontrado").style.display = "";
-        
         document.getElementById("textencript").innerHTML = "";
         document.getElementById("textencript").innerHTML = wordencrypt;
+        document.getElementById("resultado-encontrado").style.display = "";
         encriptado = false;
     }
 }

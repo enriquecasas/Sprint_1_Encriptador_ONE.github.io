@@ -35,7 +35,7 @@ function encrypt() {
 function decryptor() {
     var texto = document.getElementById('texto-area').value.toString();
 
-    if (texto.length > 0 && encriptado) {
+    if (texto.length > 0 ) {
         if (wordencrypt.includes("enter")) { wordencrypt = wordencrypt.replace(/enter/gi, "e"); }
         if (wordencrypt.includes("imes")) { wordencrypt = wordencrypt.replace(/imes/gi, "i"); }
         if (wordencrypt.includes("ai")) { wordencrypt = wordencrypt.replace(/ai/gi, "a"); }
